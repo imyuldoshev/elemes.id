@@ -1,108 +1,539 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elemes.id</title>
+
+    <meta
+      name="description"
+      content="Elemes.id offers delicious food, trending recipes, food categories and special promotions."
+    />
+
+    <meta
+      name="keywords"
+      content="food, recipes, pizza, cupcake, kebab, salmon, doughnut, Elemes"
+    />
+
+    <meta name="author" content="Elemes.id" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Elemes.id — Good Food, Good Mood" />
+
+    <meta
+      property="og:description"
+      content="Discover delicious food, trending recipes and special promotions at Elemes.id."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <title>Elemes.id — Good Food, Good Mood</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
+    <!-- Header -->
     <header class="header" id="header">
       <div class="container header_container">
-        <a class="header_logo" href="#">
-          <img src="./pictures/logo.png" alt="header logo" />
+        <a class="header_logo" href="#header" aria-label="Elemes.id home">
+          <img
+            src="./pictures/logo.png"
+            alt="Elemes.id logo"
+            width="120"
+            height="40"
+          />
         </a>
-        <nav class="nav" id="nav">
+
+        <nav class="nav" aria-label="Main navigation">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#" class="nav_link">home</a>
+              <a href="#header" class="nav_link"> Home </a>
             </li>
+
             <li class="nav_item">
-              <a href="#" class="nav_link">about</a>
+              <a href="#category" class="nav_link"> About </a>
             </li>
+
             <li class="nav_item">
-              <a href="#" class="nav_link nav_link_badge">
-                promotions
-                <span>hot</span>
+              <a href="#trend" class="nav_link nav_link_badge">
+                Promotions
+                <span>Hot</span>
               </a>
             </li>
+
             <li class="nav_item">
-              <a href="#" class="nav_link">blogs</a>
+              <a href="#trend" class="nav_link"> Blogs </a>
             </li>
+
             <li class="nav_item">
-              <a href="#" class="nav_link">contact us</a>
+              <a href="#footer" class="nav_link"> Contact Us </a>
             </li>
           </ul>
         </nav>
+
         <div class="header_button">
-          <a class="header_login" href="#">Masuk</a>
-          <a class="header_register" href="#">Daftar Sekarang</a>
+          <a class="header_login" href="#"> Masuk </a>
+
+          <a class="header_register" href="#"> Daftar Sekarang </a>
         </div>
       </div>
     </header>
-    <main class="main" id="main">
-      <section class="hero" id="hero">
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-labelledby="hero-title">
         <div class="container hero_container">
           <div class="hero_text">
-            <h1>good food us good mood</h1>
+            <h1 id="hero-title">Good Food Us Good Mood</h1>
+
             <p>
               I would think that conserving our natural resources should be a
               conservative position: Not to waste food, and not to throw away a
               lot of the food that we buy.
             </p>
+
             <div class="header_button">
-              <a class="header_register" href="#">Daftar Sekarang</a>
-              <a class="header_login hero_login" href="#">about us</a>
+              <a class="header_register" href="#"> Daftar Sekarang </a>
+
+              <a class="header_login hero_login" href="#category"> About Us </a>
             </div>
           </div>
-          <img src="./pictures/elemes-hero-img.png" alt="hero img" />
+
+          <img
+            src="./pictures/elemes-hero-img.png"
+            alt="Delicious food selection"
+            width="500"
+            height="500"
+            fetchpriority="high"
+          />
         </div>
       </section>
-      <section class="category" id="category">
+
+      <!-- Categories -->
+      <section class="category" id="category" aria-labelledby="category-title">
         <div class="container">
-          <h1 class="category_title">
-            browser our category
-            <span>receipt</span>
-          </h1>
+          <h2 class="category_title" id="category-title">
+            Browser Our Category
+            <span>Receipt</span>
+          </h2>
+
           <ul class="category_list">
             <li class="category_item">
-              <img src="./pictures/cupcake.png" alt="cupcake img">
-              <h2>cupcake</h2>
+              <img
+                src="./pictures/cupcake.png"
+                alt=""
+                width="47"
+                height="47"
+                loading="lazy"
+              />
+
+              <h3>Cupcake</h3>
+
               <span>22 items</span>
             </li>
+
             <li class="category_item">
-              <img src="./pictures/pizza.png" alt="pizza img">
-              <h2>pizza</h2>
+              <img
+                src="./pictures/pizza.png"
+                alt=""
+                width="47"
+                height="47"
+                loading="lazy"
+              />
+
+              <h3>Pizza</h3>
+
               <span>25 items</span>
             </li>
+
             <li class="category_item">
-              <img src="./pictures/kebab.png" alt="kebab img">
-              <h2>kebab</h2>
+              <img
+                src="./pictures/kebab.png"
+                alt=""
+                width="47"
+                height="47"
+                loading="lazy"
+              />
+
+              <h3>Kebab</h3>
+
               <span>12 items</span>
             </li>
+
             <li class="category_item">
-              <img src="./pictures/salmon.png" alt="salmon img">
-              <h2>salmon</h2>
+              <img
+                src="./pictures/salmon.png"
+                alt=""
+                width="47"
+                height="47"
+                loading="lazy"
+              />
+
+              <h3>Salmon</h3>
+
               <span>22 items</span>
             </li>
+
             <li class="category_item">
-              <img src="./pictures/doughnut.png" alt="doughnut">
-              <h2>doughnut</h2>
+              <img
+                src="./pictures/doughnut.png"
+                alt=""
+                width="47"
+                height="47"
+                loading="lazy"
+              />
+
+              <h3>Doughnut</h3>
+
               <span>11 items</span>
             </li>
           </ul>
+
           <div class="category_btn">
-            <button>
-              <img src="./pictures/prev.png" alt="prev icon">
-              prev
+            <button type="button" aria-label="Previous food categories">
+              <img src="./pictures/prev.png" alt="" />
+              Prev
             </button>
-            <button>
-              next
-              <img src="./pictures/next.png" alt="next icon">
+
+            <button type="button" aria-label="Next food categories">
+              Next
+              <img src="./pictures/next.png" alt="" />
             </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending -->
+      <section class="trend" id="trend" aria-labelledby="trend-title">
+        <div class="container trend_container">
+          <h2 class="category_title" id="trend-title">
+            Browser Our Category
+            <span>Trend</span>
+          </h2>
+
+          <div class="trend_list">
+            <!-- Card 1 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-1.png"
+                alt="Pizza Pepperoni"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Pizza Pepperoni</h3>
+
+              <p>Pizza</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 2 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-2.png"
+                alt="Pizza Meat"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Pizza Meat</h3>
+
+              <p>Pizza</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 3 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-3.png"
+                alt="Doner Kebab"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Doner Kebab</h3>
+
+              <p>Kebab</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 4 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-4.png"
+                alt="Salmon Roll"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Salmon Roll</h3>
+
+              <p>Salmon</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 5 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-5.png"
+                alt="Cupcake Choco"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Cupcake Choco</h3>
+
+              <p>Cupcake</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 6 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-6.png"
+                alt="Doughnut Milk"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Doughnut Milk</h3>
+
+              <p>Doughnut</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 7 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-7.png"
+                alt="Doughnut Unicorn"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Doughnut Unicorn</h3>
+
+              <p>Doughnut</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Card 8 -->
+            <article class="trend_item">
+              <img
+                src="./pictures/trend-8.png"
+                alt="Kathi Kebab"
+                width="120"
+                height="120"
+                loading="lazy"
+              />
+
+              <h3>Kathi Kebab</h3>
+
+              <p>Kebab</p>
+
+              <img
+                src="./pictures/stars.png"
+                alt="5 star rating"
+                width="68"
+                height="14"
+                loading="lazy"
+              />
+            </article>
+          </div>
+
+          <div class="trend_btn">
+            <a class="header_register" href="#trend"> All Receipt </a>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container footer_container">
+        <!-- Footer About -->
+        <div>
+          <a class="header_logo" href="#header" aria-label="Elemes.id home">
+            <img
+              src="./pictures/logo.png"
+              alt="Elemes.id logo"
+              width="120"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+
+          <p class="footer_address">
+            Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan, Kecamatan
+            Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950
+          </p>
+
+          <div class="footer_media">
+            <a href="#" aria-label="Email">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                />
+              </svg>
+            </a>
+
+            <a href="tel:088811112222" aria-label="Call Elemes">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.99992 3.87187C11.9959 3.87187 12.2326 3.87935 13.0213 3.91548C15.0471 4.00768 15.9934 4.9689 16.0856 6.97982C16.1217 7.76786 16.1286 8.00458 16.1286 10.0005C16.1286 11.9971 16.1211 12.2332 16.0856 13.0213C15.9928 15.0303 15.049 15.9934 13.0213 16.0856C12.2326 16.1217 11.9971 16.1292 9.99992 16.1292C8.00396 16.1292 7.76723 16.1217 6.97919 16.0856C4.94835 15.9928 4.00706 15.0272 3.91486 13.0206C3.87873 12.2326 3.87125 11.9965 3.87125 9.99992C3.87125 8.00396 3.87935 7.76786 3.91486 6.97919C4.00768 4.9689 4.95146 4.00706 6.97919 3.91486C7.76786 3.87935 8.00396 3.87187 9.99992 3.87187ZM9.99992 2.52441C7.9697 2.52441 7.71553 2.53314 6.91814 2.56927C4.20329 2.69386 2.69448 4.20017 2.56989 6.91752C2.53314 7.71553 2.52441 7.9697 2.52441 9.99992C2.52441 12.0301 2.53314 12.2849 2.56927 13.0823C2.69386 15.7972 4.20017 17.306 6.91752 17.4306C7.71553 17.4667 7.9697 17.4754 9.99992 17.4754C12.0301 17.4754 12.2849 17.4667 13.0823 17.4306C15.7947 17.306 17.3072 15.7997 17.4299 13.0823C17.4667 12.2849 17.4754 12.0301 17.4754 9.99992C17.4754 7.9697 17.4667 7.71553 17.4306 6.91814C17.3085 4.20578 15.8003 2.69448 13.0829 2.56989C12.2849 2.53314 12.0301 2.52441 9.99992 2.52441V2.52441ZM9.99992 6.16125C7.87999 6.16125 6.16125 7.87999 6.16125 9.99992C6.16125 12.1198 7.87999 13.8392 9.99992 13.8392C12.1198 13.8392 13.8386 12.1205 13.8386 9.99992C13.8386 7.87999 12.1198 6.16125 9.99992 6.16125ZM9.99992 12.4918C8.6238 12.4918 7.50808 11.3767 7.50808 9.99992C7.50808 8.6238 8.6238 7.50808 9.99992 7.50808C11.376 7.50808 12.4918 8.6238 12.4918 9.99992C12.4918 11.3767 11.376 12.4918 9.99992 12.4918ZM13.9906 5.11281C13.4947 5.11281 13.0929 5.51462 13.0929 6.00987C13.0929 6.50512 13.4947 6.90693 13.9906 6.90693C14.4858 6.90693 14.887 6.50512 14.887 6.00987C14.887 5.51462 14.4858 5.11281 13.9906 5.11281Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer_card">
+          <h2 class="footer_title">Categories</h2>
+
+          <a href="#">Cupcake</a>
+          <a href="#">Pizza</a>
+          <a href="#">Kebab</a>
+          <a href="#">Salmon</a>
+          <a href="#">Doughnut</a>
+        </div>
+
+        <!-- About -->
+        <div class="footer_card">
+          <h2 class="footer_title">About Us</h2>
+
+          <a href="#">About Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Report Problem</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer_card">
+          <h2 class="footer_title">Newsletter</h2>
+
+          <p>Get now free 50% discount for all products on your first order.</p>
+
+          <form class="footer_input" action="#" method="post">
+            <input
+              id="newsletter-email"
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              autocomplete="email"
+              required
+            />
+            <button type="submit">Send</button>
+          </form>
+
+          <a href="mailto:elemesid@gmail.com" id="footer_contact">
+            <img src="./pictures/mail.svg" alt="" width="20" height="20" />
+            elemesid@gmail.com
+          </a>
+
+          <a href="tel:088811112222" id="footer_contact">
+            <img src="./pictures/call.svg" alt="" width="20" height="20" />
+            0888 1111 2222
+          </a>
+        </div>
+      </div>
+
+      <p class="footer_text">© 2021 Elemes.id. All rights reserved.</p>
+    </footer>
   </body>
 </html>
